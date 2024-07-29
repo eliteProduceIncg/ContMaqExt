@@ -4,12 +4,81 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link rel="stylesheet" href="styles.css">
+    <script src="script.js"></script>
     <title>Contrato de Maquila en Empaque</title>
 </head>
 <body>
+    <div class="fondo">
+        <div class="container">
+            <div class="center-div">
+                <div class="card" style="width: 30rem;">
+                    <div class="card-body">
+                        <h2 class="card-title">Producción en maquila en empaque externo</h2>
+                        <p class="card-text">Este formulario es para registrar la producción en las maquilas externas a Elite Produce. Es un registro por el total de producción diaria de cada presentación empacada (Variedad y presentación por Peso de caja empacada).</p>
+                        <form>
 
-
-
+                            <input type="hidden" name="Marca_temporal" value="x-sheetmonkey-current-date-time" />
+                            <div class="mb-3">
+                                <label for="supervisor" class="form-label">Supervisor de maquila externa *</label>
+                                <input type="text" class="form-control" id="supervisor" name="Supervisor_de_maquila_externa" required>
+                            </div>
+                            <div class="mb-3">
+                                <label for="fechaSupervision" class="form-label">Fecha de supervisión *</label>
+                                <input type="date" class="form-control" id="fechaSupervision" required>
+                            </div>
+                            <div class="mb-3">
+                                <label for="empaque" class="form-label">Empaque *</label>
+                                <select class="form-select" id="empaque" name="Empaque" required>
+                                    <option selected>Elige...</option>
+                                    <option value="1">Empresa A</option>
+                                    <option value="2">Empresa B</option>
+                                </select>
+                            </div>
+                            <div class="mb-3">
+                                <label for="folio" class="form-label">Folio de acuerdo o contrato *</label>
+                                <select class="form-select" id="Folio" name="Folio" required>
+                                    <option selected>Elige...</option>
+                                    <option value="1">Contrato 001</option>
+                                    <option value="2">Contrato 002</option>
+                                </select>
+                            </div>
+                            <div class="mb-3">
+                                <label for="Presentacion" class="form-label">Presentacion *</label>
+                                <select class="form-select" id="Presentacion" name="Presentacion" required>
+                                    <option selected>Elige...</option>
+                                    <option value="1">Contrato 001</option>
+                                    <option value="2">Contrato 002</option>
+                                </select>
+                            </div>
+                            <div class="mb-3">
+                                <label for="Variedad" class="form-label">Variedad *</label>
+                                <select class="form-select" id="Variedad" name="Variedad" required>
+                                    <option selected>Elige...</option>
+                                    <option value="1">Contrato 001</option>
+                                    <option value="2">Contrato 002</option>
+                                </select>
+                            </div>
+                            <div class="mb-3">
+                                <label for="Cantidad empacada" class="form-label">Cantidad empacada *</label>
+                                <input type="number" class="form-control" id="CantidadEmpacada" name="Cantidad_empacada" required min="0">
+                            </div>
+                            <div class="mb-3">
+                                <label for="Unidad empacada" class="form-label">Unidad empacada *</label>
+                                <select class="form-select" id="Unidad Empacada" name="Unidad_empacada" required>
+                                    <option selected>Elige...</option>
+                                    <option value="1">Contrato 001</option>
+                                    <option value="2">Contrato 002</option>
+                                </select>
+                            </div>
+                            <button type="submit" class="btn btn-primary">Registrar</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.min.js" integrity="sha384-0pUGZvbkm6XF6gxjEnlmuGrJXVbNuzT9qBBavbLwCsOGabYfZo0T0to5eqruptLy" crossorigin="anonymous"></script>
 

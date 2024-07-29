@@ -1,0 +1,10 @@
+.center-div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 5%;
+    padding-bottom: 5%;
+}
+.fondo {
+    background-color: bisque;
+}
