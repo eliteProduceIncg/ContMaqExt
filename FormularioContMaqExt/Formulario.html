@@ -14,34 +14,29 @@
             <div class="center-div">
                 <div class="card" style="width: 30rem;">
                     <div class="card-body">
-                        <h2 class="card-title">Producción en maquila en empaque externo</h2>
-                        <p class="card-text">Este formulario es para registrar la producción en las maquilas externas a Elite Produce. Es un registro por el total de producción diaria de cada presentación empacada (Variedad y presentación por Peso de caja empacada).</p>
+                        <h2 class="card-title">Contrato de maquila en empaque 
+                        </h2>
+                        <p class="card-text">Este formulario es para registrar los acuerdo o contratos de maquila externa.
+                        </p>
                         <form>
 
                             <input type="hidden" name="Marca_temporal" value="x-sheetmonkey-current-date-time" />
                             <div class="mb-3">
-                                <label for="supervisor" class="form-label">Supervisor de maquila externa *</label>
-                                <input type="text" class="form-control" id="supervisor" name="Supervisor_de_maquila_externa" required>
-                            </div>
-                            <div class="mb-3">
-                                <label for="fechaSupervision" class="form-label">Fecha de supervisión *</label>
-                                <input type="date" class="form-control" id="fechaSupervision" required>
+                                <label for="Negociador" class="form-label">Negociador *</label>
+                                <input type="text" class="form-control" id="Negociador" name="Negociador" required>
                             </div>
                             <div class="mb-3">
                                 <label for="empaque" class="form-label">Empaque *</label>
-                                <select class="form-select" id="empaque" name="Empaque" required>
-                                    <option selected>Elige...</option>
-                                    <option value="1">Empresa A</option>
-                                    <option value="2">Empresa B</option>
-                                </select>
+                                <input type="text" class="form-control" id="Empaque" name="Empaque" required>
                             </div>
                             <div class="mb-3">
-                                <label for="folio" class="form-label">Folio de acuerdo o contrato *</label>
-                                <select class="form-select" id="Folio" name="Folio" required>
-                                    <option selected>Elige...</option>
-                                    <option value="1">Contrato 001</option>
-                                    <option value="2">Contrato 002</option>
-                                </select>
+                                <label for="Ubicacion" class="form-label">Ubicacion *</label>
+                                <p style="font-size: small;">Nombre de la empresa maquiladora</p>
+                                <input type="text" class="form-control" id="Ubicacion" name="Ubicacion" required>
+                            </div>
+                            <div class="mb-3">
+                                <label for="Folio de acuerdo o contrato" class="form-label">Folio de acuerdo o contrato *</label>
+                                <input type="text" class="form-control" id="Folio_de_acuerdo_o_contrato" name="Folio_de_acuerdo_o_contrato" required>
                             </div>
                             <div class="mb-3">
                                 <label for="Presentacion" class="form-label">Presentacion *</label>
@@ -52,7 +47,8 @@
                                 </select>
                             </div>
                             <div class="mb-3">
-                                <label for="Variedad" class="form-label">Variedad *</label>
+                                <label for="Variedad" class="form-label">Unidad de maquila *</label>
+                                <p style="font-size: small;">Unidad de produccion para pago</p>
                                 <select class="form-select" id="Variedad" name="Variedad" required>
                                     <option selected>Elige...</option>
                                     <option value="1">Contrato 001</option>
@@ -60,16 +56,29 @@
                                 </select>
                             </div>
                             <div class="mb-3">
-                                <label for="Cantidad empacada" class="form-label">Cantidad empacada *</label>
-                                <input type="number" class="form-control" id="CantidadEmpacada" name="Cantidad_empacada" required min="0">
+                                <label for="Precio" class="form-label">Precio *</label>
+                                <input type="number" class="form-control" id="Precio" name="Precio" required min="0">
+                            </div>
+                            <div class="container mt-3">
+                                <div class="mb-3">
+                                    <label for="fruta" class="form-label">Fruta *</label>
+                                    <div class="form-check">
+                                        <input class="form-check-input" type="checkbox" id="fruta1" name="fruta">
+                                        <label class="form-check-label" for="fruta1">Catálogos/ Columna J</label>
+                                    </div>
+                                    <div class="form-check">
+                                        <input class="form-check-input" type="checkbox" id="fruta2" name="fruta">
+                                        <label class="form-check-label" for="fruta2">Opción 2</label>
+                                    </div>
+                                    <div class="form-check">
+                                        <input class="form-check-input" type="checkbox" id="fruta3" name="fruta">
+                                        <label class="form-check-label" for="fruta3">Opción 3</label>
+                                    </div>
+                                </div>
                             </div>
                             <div class="mb-3">
-                                <label for="Unidad empacada" class="form-label">Unidad empacada *</label>
-                                <select class="form-select" id="Unidad Empacada" name="Unidad_empacada" required>
-                                    <option selected>Elige...</option>
-                                    <option value="1">Contrato 001</option>
-                                    <option value="2">Contrato 002</option>
-                                </select>
+                                <label for="Caja de empaque" class="form-label">Caja de empaque *</label>
+                                <input type="text" class="form-control" id="Caja_de_empaque" name="Caja_de_empaque" required>
                             </div>
                             <button type="submit" class="btn btn-primary">Registrar</button>
                         </form>
